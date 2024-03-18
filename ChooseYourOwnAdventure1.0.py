@@ -49,11 +49,23 @@ def choose_boyfriend():
 
     return boyfriend
 
+def story_intro(boyfriend):
+    print("\nYou and", boyfriend, "met under interesting circumstances. Here's how it happened:\n")
+    if boyfriend == "Lewis":
+        print("You matched with Lewis on a dating app and decided to meet for coffee. The conversation flowed effortlessly, and you both felt an instant connection.")
+    elif boyfriend == "Pierce":
+        print("You bumped into Pierce at a coffee shop while waiting in line. You struck up a conversation, and he ended up asking for your number before you left.")
+    elif boyfriend == "Andrew":
+        print("You met Andrew at a friend's party. Despite the noisy atmosphere, you found yourselves engrossed in conversation the whole night.")
+    elif boyfriend == "Blake":
+        print("You were browsing books at the library when Blake approached you, mistaking you for someone else. The mix-up led to a humorous conversation and eventually exchanging numbers.")
+
 def main():
     boyfriend = choose_boyfriend()
+    story_intro(boyfriend)
     # Your story continues here, referencing the chosen boyfriend
 
 if __name__ == "__main__":
     main()
-print("\n**********************************************************")
+print("\n\**********************************************************")
 #1. First commit ending
